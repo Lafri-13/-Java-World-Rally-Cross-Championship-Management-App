@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwpart2.cw2programming.DeleteController">
+    <children>
+        <AnchorPane prefHeight="582.0" prefWidth="640.0" style="-fx-background-color: #3C4048;">
+            <children>
+                <Button layoutX="490.0" layoutY="490.0" defaultButton="true" onAction="#onDeleteControllerButtonClick" prefHeight="26.0" prefWidth="110.0" text="DELETE">
+                    <font>
+                        <Font name="Agency FB Bold" size="16.0" />
+                    </font></Button>
+                <AnchorPane minWidth="-Infinity" prefHeight="582.0" prefWidth="302.0" style="-fx-background-color: black;">
+                    <children>
+                        <Label fx:id="deleteMessage" layoutX="30.0" layoutY="70.0" prefHeight="26.0" prefWidth="505.0" textFill="#b1b713">
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font></Label>
+                        <Label fx:id="welcomeText2" layoutX="150.0" layoutY="150.0" prefHeight="22.0" prefWidth="110.0" text="NAME :" textFill="#c4c8cc">
+                            <font>
+                                <Font name="Wingdings 3" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="60.0" layoutY="490.0" defaultButton="true" onAction="#onDeleteToMenuButtonClick" prefHeight="26.0" prefWidth="110.0" text="PREVIOUS">
+                            <font>
+                                <Font name="Agency FB Bold" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <Label fx:id="welcomeText1" layoutX="11.0" layoutY="10.0" prefHeight="44.0" prefWidth="458.0" text="DELETE DRIVER DETAILS" textFill="#df2e38">
+                    <font>
+                        <Font name="Agency FB Bold" size="36.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutX="274.0" prefHeight="80.0" prefWidth="364.0" />
+                <TextField fx:id="delete_driver" layoutX="150.0" layoutY="200.0" prefHeight="26.0" prefWidth="394.0" promptText="Enter Driver's Name to Delete" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

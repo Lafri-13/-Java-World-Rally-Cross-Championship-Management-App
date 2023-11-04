@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwpart2.cw2programming.ViewRaceController">
+    <children>
+        <AnchorPane prefHeight="682.0" prefWidth="740.0" style="-fx-background-color: #3C4048;">
+            <children>
+                <AnchorPane minWidth="-Infinity" prefHeight="682.0" prefWidth="302.0" style="-fx-background-color: black;">
+                    <children>
+                        <Button defaultButton="true" layoutX="60.0" layoutY="600.0" onAction="#onViewRaceToMenuButtonClick" prefHeight="26.0" prefWidth="110.0" text="PREVIOUS">
+                            <font>
+                                <Font name="Agency FB Bold" size="16.0" />
+                            </font>
+                        </Button>
+                  <ScrollPane fx:id="viewRaces" layoutX="22.0" layoutY="50.0" prefHeight="532.0" prefWidth="700.0">
+                     <content>
+                              <Label fx:id="loadedDetails" prefHeight="532.0" prefWidth="700.0" textFill="#c4c8cc" wrapText="true">
+                                  <font>
+                                      <Font name="Wingdings 3" size="10.0" />
+                                  </font>
+                              </Label>
+                     </content></ScrollPane>
+                    </children>
+                </AnchorPane>
+                <Label fx:id="welcomeText1" layoutX="11.0" layoutY="10.0" prefHeight="44.0" prefWidth="458.0" text="SIMULATED RACES" textFill="#df2e38">
+                    <font>
+                        <Font name="Agency FB Bold" size="36.0" />
+                    </font>
+                </Label>
+
+                <AnchorPane layoutX="274.0" prefHeight="80.0" prefWidth="364.0" />
+                <Button defaultButton="true" layoutX="570.0" layoutY="600.0" onAction="#onViewControllerButtonClick" prefHeight="26.0" prefWidth="110.0" text="VIEW">
+                    <font>
+                        <Font name="Agency FB Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

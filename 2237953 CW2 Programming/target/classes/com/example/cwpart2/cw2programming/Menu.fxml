@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwpart2.cw2programming.MenuController">
+   <children>
+      <AnchorPane prefHeight="582.0" prefWidth="640.0" style="-fx-background-color: #3C4048;">
+         <children>
+             <Button fx:id="AddButton" defaultButton="true" layoutX="500.0" layoutY="120.0" onAction="#onAddButtonClick" prefHeight="26.0" prefWidth="110.0" text="ADD">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="DeleteButton" defaultButton="true" layoutX="500.0" layoutY="170.0" onAction="#onDeleteButtonClick" prefHeight="26.0" prefWidth="110.0" text="DELETE">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="UpdateButton" defaultButton="true" layoutX="500.0" layoutY="220.0" onAction="#onUpdateButtonClick" prefHeight="26.0" prefWidth="110.0" text="UPDATE">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="TableButton" defaultButton="true" layoutX="500.0" layoutY="270.0" onAction="#onTableButtonClick" prefHeight="26.0" prefWidth="110.0" text="TABLE">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="RaceButton" defaultButton="true" layoutX="500.0" layoutY="320.0" onAction="#onRaceButtonClick" prefHeight="26.0" prefWidth="110.0" text="RACE">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="ViewRaceButton" defaultButton="true" layoutX="500.0" layoutY="370.0" onAction="#onViewRacesButtonClick" prefHeight="26.0" prefWidth="110.0" text="VIEW RACES">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="SaveButton" defaultButton="true" layoutX="500.0" layoutY="420.0" onAction="#onSaveButtonClick" prefHeight="26.0" prefWidth="110.0" text="SAVE">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="LoadButton" defaultButton="true" layoutX="500.0" layoutY="470.0" onAction="#onLoadButtonClick" prefHeight="26.0" prefWidth="110.0" text="LOAD">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="ExitButton" defaultButton="true" layoutX="500.0" layoutY="520.0" onAction="#onExitButtonClick" prefHeight="26.0" prefWidth="110.0" text="EXIT">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font></Button>
+            <AnchorPane prefHeight="582.0" prefWidth="472.0" style="-fx-background-color: black;">
+               <children>
+                  <Label fx:id="menuMessage" layoutX="30.0" layoutY="70.0" prefHeight="26.0" prefWidth="410.0" textFill="#b1b713">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font></Label>
+                  <Label fx:id="welcomeText2" layoutX="26.0" layoutY="120.0" prefHeight="18.0" prefWidth="230.0" text="ADDING DRIVER DETAILS" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText21" layoutX="26.0" layoutY="170.0" prefHeight="18.0" prefWidth="230.0" text="DELETING DRIVER DETAILS" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText211" layoutX="26.0" layoutY="220.0" prefHeight="18.0" prefWidth="230.0" text="UPDATING DRIVER DETAILS" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText2111" layoutX="26.0" layoutY="270.0" prefHeight="22.0" prefWidth="356.0" text="VIEWING THE RALLY CROSS STANDINGS TABLE " textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText21111" layoutX="26.0" layoutY="320.0" prefHeight="18.0" prefWidth="230.0" text="SIMULATING A RANDOM RACE" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText211111" layoutX="26.0" layoutY="370.0" prefHeight="22.0" prefWidth="425.0" text="VIEWING RACE TABLE SORTED ACCORDING TO THE DATE" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText2111111" layoutX="26.0" layoutY="420.0" prefHeight="22.0" prefWidth="330.0" text="SAVE THE CURRENT DATA TO A TEXT FILE" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText21111111" layoutX="26.0" layoutY="470.0" prefHeight="22.0" prefWidth="314.0" text="LOAD DATA FROM THE SAVED TEXT FILE" textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="welcomeText211111111" layoutX="26.0" layoutY="520.0" prefHeight="26.0" prefWidth="230.0" text="EXIT THE PROGRAM.   " textFill="#c4c8cc">
+                     <font>
+                        <Font name="Wingdings 3" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="welcomeText1" layoutX="11.0" layoutY="10.0" prefHeight="44.0" prefWidth="458.0" text="WORLD RALLY CROSS CHAMPIONSHIP" textFill="#df2e38">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="472.0" prefHeight="80.0" prefWidth="166.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
